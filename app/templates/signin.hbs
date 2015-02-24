@@ -1,0 +1,17 @@
+<div class="kwc-signin-container">
+	<div class="kwc-signin-logo inlineBlock left">
+		<img src="/assets/img/logo.gif">
+		<h2>Kafka Web Console</h2>
+	</div>
+    <div class="kwc-signin inlineBlock left">
+    	<h2>Login</h2>
+    	<label>username</label>
+        {{input class="kwc-signin-txt" name="username" value=username type="text" placeholder="E mail" autofocus="autofocus" autocapitalize="off" }}
+        <label>password</label>
+        {{input class="kwc-signin-txt" name="password" value=password type="password" placeholder="Password"}}
+        <button id="submit" type="submit" {{action "authenticate"}}>Submit</button>
+        {{#if error.hasError}}
+                  <span >{{error.msg}}</span>
+        {{/if}}
+    </div>
+</div>

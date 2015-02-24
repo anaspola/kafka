@@ -1,0 +1,16 @@
+<div class="kwc-groups-container">
+
+	{{#each group in model}}
+		
+	 		{{#link-to "groups.show" group.id}} 
+	 			<div class="kwc-group">
+	 				{{group.id}}
+	 				<span> 
+	 					{{group.name}}
+	 				</span>
+	 			</div>
+	 		{{/link-to}}
+	 	
+	{{/each}}
+
+</div>
