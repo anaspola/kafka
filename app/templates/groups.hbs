@@ -1,0 +1,38 @@
+{{#if session.isAuthenticated }}
+<div class="kwc-header">
+	<div class="kwc-logo left" >
+		<span>Kafka Web Console</span>
+	
+	</div>
+	<div class="kwc-user-info right">
+		<button {{action 'signOut'}}>logout</button>
+	</div>
+
+</div>
+<div class="kwc-body-container">
+	<div class="kwc-left-menu-container">
+		<ul class="kws-left-menu">
+			<li>{{link-to "Groups" "groups"}}</li>
+			<li>{{link-to "Settings" "groups.settings"}}</li>
+		</ul>
+	</div>
+	<div class="kwc-main-container">
+		<div class= "block">
+	{{#each tab in tabs}}
+		{{#view 'tab-view' tabBinding="tab"}}
+    {{tab}} <span class="close" {{action 'closeTab' tab bubbles=false}}>x</span>
+		{{/view}}
+	{{/each}}
+    <button {{action 'createTab'}}>+</button>
+	</div>
+	<br/>
+	<div>
+		{{outlet}}
+	</div>
+	</div>
+</div>
+
+
+{{/if}}
+
+

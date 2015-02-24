@@ -1,0 +1,220 @@
+html, body {
+  margin: 0;
+}
+
+body {
+	/*background-color: #bbb;*/
+	font-family: sans-serif;
+	font-weight: 300;
+	background: #c0cacf; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url('/assets/img/bg.png');
+		background-size: 100%;
+}
+table {
+	width: 100%;
+}
+
+
+/*---Common----*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+/*---End Common---*/
+
+/*----Header----*/
+.kwc-header{
+	background-color: #333;
+	padding: 1% 2%;
+	color: #ddd;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+	box-sizing:border-box;
+}
+.kwc-loading{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+}
+.kwc-logo{
+	font-size: 18px;
+}
+/*---End header----*/
+
+/*-----Body Container----*/
+.kwc-body-container{
+	margin-top: 50px;
+}
+.kwc-left-menu-container{
+	position: fixed;
+	height: 100%;
+	width: 15%;
+	background: url('/assets/img/bg-menu.png');
+	top: 0;
+	opacity: 0.9;
+	padding-top: 2%;
+}
+ul.kws-left-menu {
+	padding: 0;
+}
+.kws-left-menu li a{
+	font-weight: 100;
+	padding: 15px 10px;
+	display: block;
+	color: #fff;
+	border-bottom: 1px solid #777;
+}
+.kws-left-menu li a.active{
+	color: #fff;
+	background-color: #91a4ad;
+}
+.kws-left-menu li{
+	display: block;
+	list-style-type: none;
+}
+.kwc-main-container{
+	margin-left: 15%;
+	 padding: 1% 3%; 
+	
+}
+.kwc-groups-container{
+	/*padding: 4%;*/
+}
+.kwc-group{
+	width: 200px;
+	height: 100px;
+	padding: 10px;
+	display: inline-block;
+	margin: 15px;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 14px 14px 0 #94b2c1;
+	-webkit-box-shadow: 14px 14px 0 #94b2c1;
+	-moz-box-shadow: 14px 14px 0 #94b2c1;
+	
+}
+.kwc-group span{
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+}
+.kwc-group-id span{
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+}
+a{
+	color:grey;
+	text-decoration: none;
+}
+/*---End Body Container----*/
+
+/*--------Login--------*/
+.kwc-signin-container{
+	width: 45%;
+	margin: 10% 40%;
+	padding: 5px;
+	min-height: 250px;
+	background: #fafbfc; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZhZmJmYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIzJSIgc3RvcC1jb2xvcj0iI2YyZjNmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc3JSIgc3RvcC1jb2xvcj0iI2QyZDNkMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjOWNhY2IiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #fafbfc 0%, #f2f3f3 23%, #d2d3d3 77%, #c9cacb 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fafbfc), color-stop(23%,#f2f3f3), color-stop(77%,#d2d3d3), color-stop(100%,#c9cacb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fafbfc 0%,#f2f3f3 23%,#d2d3d3 77%,#c9cacb 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fafbfc 0%,#f2f3f3 23%,#d2d3d3 77%,#c9cacb 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fafbfc 0%,#f2f3f3 23%,#d2d3d3 77%,#c9cacb 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fafbfc 0%,#f2f3f3 23%,#d2d3d3 77%,#c9cacb 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafbfc', endColorstr='#c9cacb',GradientType=0 ); /* IE6-8 */
+	box-shadow:  		 0 0px 10px #377e88;
+	-webkit-box-shadow:  0 0px 10px #377e88;
+	-moz-box-shadow:  	 0 0px 10px #377e88;
+}
+.inlineBlock{
+	display: inline-block;
+}
+.kwc-signin-logo{
+	width: 50%;
+	padding-top: 15%
+}
+.kwc-signin-logo img{
+	float: left;
+	vertical-align: middle;
+	margin: 10px;
+}
+.kwc-signin-logo h2{
+
+}
+.kwc-signin{
+	width: 50%;
+	padding: 3%;
+	box-sizing: border-box;
+}
+.kwc-signin h2{
+	font-weight: 100;
+	color: #556973;
+}
+.kwc-signin label{
+	color: #666;
+	font-size: 10pt;
+}
+.kwc-signin input[type="text"],.kwc-signin input[type="password"]{
+	background-color:#b7c0c3;
+	border:none;
+	color: #fff;
+}
+.kwc-signin input[type="text"]:focus, .kwc-signin input[type="password"]:focus{
+	background-color:#91a4ad;
+}
+.kwc-signin-txt {
+	width: 100%;
+	height: 25px;
+	margin: 5px 0;
+	padding-left: 5px;
+}
+/*------End login-----*/
+
+.kwc-table-rows{
+	padding: 0;
+	margin: 0;
+}
+.kwc-table-rows li{
+	border-bottom: 1px solid #ddd;
+	list-style-type: none;
+}
+
+
+/*.datagrid table {
+ 	border-collapse: collapse; text-align: left; width: 100%; border:1px solid black;border-collapse:collapse;
+} 
+.datagrid {
+ 	font: normal 12px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; 
+}
+.datagrid table td, .datagrid table th { 
+	padding: 3px 10px; border:1px solid black;
+}
+.datagrid table thead th {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; border:1px solid black;} .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00496B; border-left: 1px solid #E1EEF4;font-size: 12px;font-weight: normal; border:1px solid black;}.datagrid table tbody .alt td { background: #E1EEF4; color: #00496B; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }.datagrid table tfoot td div { border-top: 1px solid #006699;background: #E1EEF4;} .datagrid table tfoot td { padding: 0; font-size: 12px } .datagrid table tfoot td div{ padding: 2px; }.datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }.datagrid table tfoot  li { display: inline; }.datagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #006699;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; }.datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #006699; color: #FFFFFF; background: none; background-color:#00557F;}div.dhtmlx_window_active, div.dhx_modal_cover_dv { position: fixed !important; }
+*/.block {
+    margin-top: 10px;
+}
+.block .btn {
+    cursor: pointer;
+    float: left;
+    margin: 0 10px 10px;
+}
+.active {
+    font-weight: bold;
+}
+.btn .close {
+    background: #999;
+    color: #fff;
+    cursor: pointer;
+    padding: 0px 6px 2px;
+    font-weight: normal;
+}
