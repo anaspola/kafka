@@ -1,56 +1,63 @@
-GroupName: {{Selectedgroup}}
-<br/>
-<br/> 
+ 
 
-<div class="articles-container">
-<div class="datagrid">
-<table>
-<thead>
-<tr>
-<th>Topic Name</th>
-<th>Partition Pid</th>
-<th>Lag</th>
-<th>Offset</th>
-</tr>
-</thead>
-<tbody>
-{{#each Topic in model}}
-<tr class="alt">
-<td>
-{{ Topic.name }}
-</td>
-<td>
-	<ul class="kwc-table-rows">
-		{{#each partition in Topic.partitions}}
-			<li>
-				{{ partition.pid }}				
-			</li>
-		{{/each}}
-	</ul>
-</td>
-<td>
-	<ul class="kwc-table-rows">
-		{{#each partition in Topic.partitions}}
-			<li>
-				{{ partition.lag }}
-			</li>			
-		{{/each}}
-	</ul>
-	
-</td>
-<td>
-	<ul class="kwc-table-rows">
-		{{#each partition in Topic.partitions}}
-			<li>
-				{{ partition.offset }}
-			</li>			
-		{{/each}}
-	</ul>
-</td>
-</tr>
-{{/each}}
-</tbody>
-</table>
-</div>
+<div class="kwc-topics-container">
+	<label>GroupName:</label> {{Selectedgroup}}
+
+	<div class="kwc-topics-table-wrapper">
+		<table class="kwc-table-topics">
+			<thead>
+				<tr>
+					<th>Topic Name</th>
+					<th>Partition Pid</th>
+					<th>Lag</th>
+					<th>Offset</th>
+					<th></th>
+				</tr>
+			</thead>
+		<tbody>
+			{{#each Topic in model}}
+				<tr class="alt">
+					<td>
+						<div class="kwc-td-div">{{ Topic.name }}</div>
+					</td>
+					<td>
+						<div class="kwc-td-div">{{ Topic.partitions.length }}</div>
+						<ul class="kwc-table-rows">
+							{{#each partition in Topic.partitions}}
+								<li>
+									{{ partition.pid }}				
+								</li>
+							{{/each}}
+						</ul>
+					</td>
+					<td>
+						<div class="kwc-td-div">{{ Topic.partitions.length }}</div>
+						<ul class="kwc-table-rows">
+							{{#each partition in Topic.partitions}}
+								<li>
+									{{ partition.lag }}
+								</li>			
+							{{/each}}
+						</ul>
+						
+					</td>
+					<td>
+						<div class="kwc-td-div">{{ Topic.partitions.length }}</div>
+						<ul class="kwc-table-rows">
+							{{#each partition in Topic.partitions}}
+								<li>
+									{{ partition.offset }}
+								</li>			
+							{{/each}}
+						</ul>
+					</td>
+					<td>
+						<div class="kwc-td-div">+</div>
+					</td>
+				</tr>
+			{{/each}}
+		</tbody>
+		</table>
+	</div>
 </div>
 
